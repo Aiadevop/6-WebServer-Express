@@ -5,3 +5,8 @@
         Dejamos como archivos estáticos assets y js y 
             creamos una carpeta templates para archivos dinámicos.
         Creamos su carpeta views
+        Se utiliza normalmente para contenido sencillo 
+        Commit "Renderizando"
+* Creamos una carpeta partials.
+        93. vamos a trabajar con los parciales de hbs.
+

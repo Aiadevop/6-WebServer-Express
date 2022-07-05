@@ -4,13 +4,15 @@
 
 //Código que aparece en la página de npm express
 
-const express = require('express')
+const express = require('express');
+const hbs = require('hbs');
+
 const app = express()
 const port = 8090;
 
 //Para usar hbs
-
 app.set('view engine', 'hbs');
+hbs.registerPartials(__dirname + '/views/partials', function(err) {});
 
 //Servir contenido estático ej html
 
@@ -23,6 +25,25 @@ app.get('/', (req, res) => {
         nombre: 'Lara',
         titulo: 'Renderizando'
     });
+
+});
+
+app.get('/generic', (req, res) => {
+    //renderizamos(permite compartir código) la ruta con el archivo home.hbs
+    res.render('generic', {
+        nombre: 'Lara',
+        titulo: 'Renderizando'
+    });
+
+});
+
+app.get('/elements', (req, res) => {
+    //renderizamos(permite compartir código) la ruta con el archivo home.hbs
+    res.render('elements', {
+        nombre: 'Lara',
+        titulo: 'Renderizando'
+    });
+
 });
 
 //Si lo de arriba se ejecuta no se ejecuta esta parte de abajo.

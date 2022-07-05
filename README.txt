@@ -9,4 +9,10 @@
         Commit "Renderizando"
 * Creamos una carpeta partials.
         93. vamos a trabajar con los parciales de hbs.
+* Configuramos una variable de entorno de puerto.
+        94. Preparar webserver para subirlo a un hosting
+        npm i dotenv (para establecer las variables de entorno)
+        creamos el archivo .env
+        En el package.json hay que añadir en scripts "start": "node app.js"
+        npm start para levantar la aplicación
 

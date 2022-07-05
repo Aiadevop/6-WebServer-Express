@@ -16,11 +16,16 @@ app.set('view engine', 'hbs');
 
 app.use(express.static('public'));
 
-//Si lo de arriba se ejecuta no se ejecuta esta parte de abajo.
+
 app.get('/', (req, res) => {
-    res.send('Hello World')
+    //renderizamos(permite compartir código) la ruta con el archivo home.hbs
+    res.render('home', {
+        nombre: 'Lara',
+        titulo: 'Renderizando'
+    });
 });
 
+//Si lo de arriba se ejecuta no se ejecuta esta parte de abajo.
 //Si queremos que funcione alguna otra ruta hay que definirla
 app.get('/elements', (req, res) => {
     res.sendFile(__dirname + '/public/elements.html')

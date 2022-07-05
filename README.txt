@@ -33,3 +33,5 @@
         vamos a la carpeta de React y escribimos http-server -o
         y ya entramos en nuestra aplicación puede que haya que recargar la página.
 
+        Añadimos la carpeta de React a public
+

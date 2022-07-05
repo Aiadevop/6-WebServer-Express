@@ -25,5 +25,11 @@
         Instalamos Heroku git en su página
         heroku login en la terminal para autenticarnos
         Establecemos la conexión con heroku git:remote -a webserver-nodealag (aparece en la pg de Heroku)
-
+        Con git branch, nos aparece en nuestro caso main
+        Y luego desplegamos la aplicación con: git push heroku main 
+        En heroku -> Open app tenemos nuestra aplicación
+* Desplegando aplicaciones de Angular y React 96.
+        npm install --global http-server (para que pueda correr la aplicación)
+        vamos a la carpeta de React y escribimos http-server -o
+        y ya entramos en nuestra aplicación puede que haya que recargar la página.
 

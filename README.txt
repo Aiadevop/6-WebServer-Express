@@ -15,4 +15,15 @@
         creamos el archivo .env
         En el package.json hay que añadir en scripts "start": "node app.js"
         npm start para levantar la aplicación
+* Para desplegar la aplicación
+        Firebase hosting
+        AWS Free Tier
+        Google Cloud 
+        Azure 
+        DigitalOcean 
+        Heroku (es el que vamos a usar aquí.)
+        Instalamos Heroku git en su página
+        heroku login en la terminal para autenticarnos
+        Establecemos la conexión con heroku git:remote -a webserver-nodealag (aparece en la pg de Heroku)
+
 
